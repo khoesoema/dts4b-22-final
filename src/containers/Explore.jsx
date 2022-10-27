@@ -5,8 +5,9 @@ import ExploreFilter from '../components/Explore/ExploreFilter';
 import ExploreResult from '../components/Explore/ExploreResult';
 
 const Explore = () => {
-    const searchParams = useSearchParams();
-
+    // eslint-disable-next-line
+    let [searchParams, setSearchParams] = useSearchParams();
+    
     const [config, setConfig] = useState({});
 
     useEffect(() => {
